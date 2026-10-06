@@ -1,5 +1,5 @@
 // ================== REGRAS DE VALIDAÇÃO ==================
-const SENHA_MINIMA = 6;
+const SENHA_MINIMA = 8;
 
 function validarNome(nome) {
   return nome.trim().length >= 3;
