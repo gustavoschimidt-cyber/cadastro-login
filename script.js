@@ -147,8 +147,8 @@ function rodarTestes() {
     [validarEmail("teste@gmail.com") === true, "E-mail válido falhou"],
     [validarEmail("teste@") === false, "E-mail inválido passou"],
     [validarEmail("testegmail.com") === false, "E-mail sem @ passou"],
-    [validarSenha("abc123") === true, "Senha válida falhou"],
-    [validarSenha("abc") === false, "Senha curta passou"],
+    [validarSenha("abcdef12") === true, "Senha válida falhou"],
+    [validarSenha("abc1234") === false, "Senha curta passou"],
     [validarSenha("abcdefgh") === false, "Senha sem número passou"],
     [senhasIguais("abc123", "abc123") === true, "Senhas iguais falhou"],
     [senhasIguais("abc123", "abc124") === false, "Senhas diferentes passou"]
